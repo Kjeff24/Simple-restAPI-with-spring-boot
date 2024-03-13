@@ -2,16 +2,10 @@ package com.example.SpringRest.controllers;
 
 import com.example.SpringRest.dto.StudentDto;
 import com.example.SpringRest.dto.StudentResponseDto;
-import com.example.SpringRest.models.Student;
 import com.example.SpringRest.services.StudentService;
 import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
 
 

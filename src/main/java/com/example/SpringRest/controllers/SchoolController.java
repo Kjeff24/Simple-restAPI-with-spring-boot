@@ -3,14 +3,12 @@ package com.example.SpringRest.controllers;
 import com.example.SpringRest.dto.SchoolDto;
 import com.example.SpringRest.dto.SchoolResponseDto;
 import com.example.SpringRest.models.School;
-import com.example.SpringRest.repositories.SchoolRepository;
 import com.example.SpringRest.services.SchoolService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 public class SchoolController {

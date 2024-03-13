@@ -5,12 +5,11 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "t_student")
 public class Student {
     @Id
     @GeneratedValue
     private Integer id;
-    @Column(name = "c_f_name", length = 20)
+    @Column(length = 20)
     private String firstName;
     private String lastName;
     @Column(unique = true)
