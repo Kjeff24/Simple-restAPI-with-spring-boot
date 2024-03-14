@@ -79,16 +79,21 @@ class SchoolMapperTest {
 
     }
 
-    private static School getSchool() {
-        Student student1 = new Student();
-        student1.setFirstName("Jeffrey");
-        student1.setLastName("Arthur");
-        student1.setEmail("arthur@gmail.com");
 
-        Student student2 = new Student();
-        student2.setFirstName("Micheal");
-        student2.setLastName("Evans");
-        student2.setEmail("evans@gmail.com");
+    private static School getSchool() {
+        Student student1 = new Student(
+                "John",
+                "Arthur",
+                "arthur@gmail.com",
+                20
+        );
+
+        Student student2 = new Student(
+                "Jeffrey",
+                "Arthur",
+                "arthur12@gmail.com",
+                20
+        );
 
         List<Student> students = new ArrayList<>();
         students.add(student1);

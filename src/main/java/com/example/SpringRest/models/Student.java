@@ -31,6 +31,13 @@ public class Student {
     public Student() {
     }
 
+    public Student(String firstName, String lastName, String email, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+    }
+
     public Integer getId() {
         return id;
     }

@@ -55,11 +55,12 @@ class StudentMapperTest {
      * */
     @Test
     public void shouldMapStudentToStudentResponseDto(){
-        Student student = new Student();
-
-        student.setFirstName("Jeffrey");
-        student.setLastName("Arthur");
-        student.setEmail("arthur@gmail.com");
+        Student student = new Student(
+                "John",
+                "Arthur",
+                "arthur@gmail.com",
+                20
+        );
 
         StudentResponseDto studentResponseDto = mapper.toStudentResponseDto(student);
 
